@@ -5,14 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create Quiz</title>
     <link rel="stylesheet" href="./css/module.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <dev class="form">
-        <form action="">
-            <fieldset>
+    <header>
+        <span>
+            <a href="#">Home</a>
+            <a href="#">Your Mark</a>
+            <a href="#">Question</a>
+        </span>
+    </header>
+
+    <main>
+        <div class="submit"><button>Create Quiz</button></div>
+        <dev class="form">
+            <form action="">
                 <label for="ques-name">Question</label>
                 <input type="text" id="ques-name" placeholder="Enter Your Question">
                 <br>
@@ -38,13 +49,14 @@
                 <br>
                 <br>
                 <button id="button">Click to Added you Question</button>
-            </fieldset>
-        </form>
+                <button class="Exit">Exit Quiz</button>
+            </form>
 
-        <div id="msg">
-            <pre></pre>
-        </div>
-    </dev>
+            <div id="msg">
+                <pre></pre>
+            </div>
+        </dev>
+    </main>
 
     <script src="/js/questions.js"></script>
 </body>

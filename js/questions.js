@@ -58,3 +58,15 @@ document.addEventListener("DOMContentLoaded", () => {
 //         "not your business",
 //     ],
 // }, ];
+
+const showBox = document.querySelector(".submit");
+const infoBox = document.querySelector(".form");
+const exitButton1 = infoBox.querySelector(".Exit");
+
+showBox.onclick = () => {
+    infoBox.classList.add("activeInfo");
+};
+
+exitButton1.onclick = () => {
+    infoBox.classList.remove("activeInfo");
+};
